@@ -8,12 +8,18 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
+const feedbackInputs = (state={comment: ''}, action) => {
 
+    if (action.type === 'FEELS') {
+        console.log('Feels:', action.payload);
+        return {...state, feeling: action.payload};
+    };
+    return state;
+};
 
-
-// Redux store
 const storeInstance = createStore(
     combineReducers({
+        feedbackInputs,
     }),    
 );
 
