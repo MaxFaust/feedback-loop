@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 const feedbackInputs = (state={comment: ''}, action) => {
 
     if (action.type === 'FEELS') {
-        console.log('Feels:', action.payload);
+        console.log('Feels payload recieved:', action.payload);
         return {...state, feeling: action.payload};
     };
     return state;

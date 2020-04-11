@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 
 // Component imports
 import Home from '../Home/Home';
+import Feels from '../Feels/Feels'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Router>
           <div className="feedback-forms">
             <Route exact path='/' component={Home} />
+            <Route path='/Feels' component={Feels} />
           </div>
         </Router>
 

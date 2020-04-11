@@ -7,7 +7,7 @@ class Home extends Component {
 onClick =(event) => {
     event.preventDefault();
     console.log('Home- onClick');
-    this.props.history.push('/Feeling');
+    this.props.history.push('/Feels');
 };
 
   render() {
