@@ -5,15 +5,15 @@ import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Import redux
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
 
 
 
+// Redux store
 const storeInstance = createStore(
     combineReducers({
-        feedback,
     }),    
 );
 
