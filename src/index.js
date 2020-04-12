@@ -24,8 +24,12 @@ const feedbackInputs = (state = { comment: '' }, action) => {
     };
     if (action.type === 'COMMENTS') {
         console.log('Supported payload recieved:', action.payload);
-        return { ...state, supported: action.payload };
+        return { ...state, comments: action.payload };
     };
+    if(action.type === 'RESET') {
+        console.log('Reset state')
+        return {comments: ''}
+    }
     return state;
 };
 
