@@ -4,9 +4,11 @@ import './index.css';
 import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
-// Import redux
-import { createStore, combineReducers } from 'redux';
+
+// Import redux, provider, and logger
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import logger from 'redux-logger';
 
 const feedbackInputs = (state = { comment: '' }, action) => {
 
@@ -39,6 +41,7 @@ const storeInstance = createStore(
     combineReducers({
         feedbackInputs,
     }),
+    applyMiddleware(logger)
 );
 
 ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));

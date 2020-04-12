@@ -13,7 +13,6 @@ onClick =(event) => {
   render() {
     return (
       <>
-          <br/>
           <button onClick={this.onClick}>Leave Feedback</button>
       </>
     );
