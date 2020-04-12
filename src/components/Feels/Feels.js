@@ -22,7 +22,8 @@ class Feels extends Component {
             console.log('Dispatching feels payload:', this.state.feels);
 
             // Send feels input to redux store
-            this.props.dispatch({ type: 'FEELS', payload: this.state.feels })
+            this.props.dispatch({ type: 'FEELS', payload: this.state.feels });
+            this.props.history.push('/Understanding');
         }
     };
 
