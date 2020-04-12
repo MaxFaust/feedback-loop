@@ -29,7 +29,7 @@ class Feels extends Component {
 
     render() {
         return (
-            <div >
+            <div>
                 How are you Feeling? <br />
                 <select name='Select feelings' onChange={this.handleChange}>
                     <option value=''>Select</option>

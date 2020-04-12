@@ -28,7 +28,7 @@ const feedbackInputs = (state = { comment: '' }, action) => {
     };
     if(action.type === 'RESET') {
         console.log('Reset state')
-        return {comments: ''}
+        return state;
     }
     return state;
 };

@@ -16,7 +16,7 @@ class Understanding extends Component {
 
     handleSubmit = (event) => {
         if (this.state.understanding === '') {
-            alert('Please select a value')
+            alert('Please let us know how well you understood today\'s material')
         } else {
             event.preventDefault();
             console.log('Dispatching understanding payload:', this.state.understanding);

@@ -9,7 +9,8 @@ import Feels from '../Feels/Feels';
 import Understanding from '../Understanding/Understanding';
 import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
-import Review from '../Review/Review'
+import Review from '../Review/Review';
+import Success from '../Success/Success';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path='/Supported' component={Supported} />
             <Route path='/Comments' component={Comments}/>
             <Route path='/Review' component={Review}/>
+            <Route path='/Success' component={Success}/>
           </div>
         </Router>
 

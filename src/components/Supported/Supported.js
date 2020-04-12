@@ -16,7 +16,7 @@ class Supported extends Component {
 
     handleSubmit = (event) => {
         if (this.state.supported === '') {
-            alert('Please select a value')
+            alert('Please tell us how supported you feel.')
         } else {
             event.preventDefault();
             console.log('Dispatching Supported payload:', this.state.supported);
@@ -29,7 +29,7 @@ class Supported extends Component {
 
     render() {
         return (
-            <div >
+            <div>
                 How supported do you feel today? <br />
                 <select name='Select Supported' onChange={this.handleChange}>
                     <option value=''>Select</option>
