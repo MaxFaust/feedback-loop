@@ -15,8 +15,16 @@ const feedbackInputs = (state = { comment: '' }, action) => {
         return { ...state, feels: action.payload };
     };
     if (action.type === 'UNDERSTANDING') {
-         console.log('Understanding payload recieved:', action.payload);
-         return { ...state, understanding: action.payload };
+        console.log('Understanding payload recieved:', action.payload);
+        return { ...state, understanding: action.payload };
+    };
+    if (action.type === 'SUPPORTED') {
+        console.log('Supported payload recieved:', action.payload);
+        return { ...state, supported: action.payload };
+    };
+    if (action.type === 'COMMENTS') {
+        console.log('Supported payload recieved:', action.payload);
+        return { ...state, supported: action.payload };
     };
     return state;
 };
