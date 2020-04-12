@@ -11,7 +11,7 @@ class Comments extends Component {
         this.setState({
             comments: event.target.value,
         });
-        console.log('Comments input:', event.target.value);
+        // console.log('Comments input:', event.target.value);
     };
 
     handleSubmit = (event) => {
