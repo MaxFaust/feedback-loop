@@ -11,9 +11,9 @@ Screen Shot
 Prerequisites
 
 Installation
-$ npx create-react-app cra-orientation --scripts-version 2.1.8
-$ npm install react-redux
-$ npm install redux-logger (OPTIONAL)
+npx create-react-app cra-orientation --scripts-version 2.1.8
+npm install react-redux
+npm install redux-logger (OPTIONAL)
 
 There are no secret keys necessary to run this app.
 
