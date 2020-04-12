@@ -7,7 +7,7 @@ handleSubmit = (event) => {
     event.preventDefault();
     this.props.dispatch({ type: 'RESET'});
     this.props.history.push('/');
-}
+};
 
   render() {
     return (

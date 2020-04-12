@@ -23,12 +23,18 @@ class Comments extends Component {
         this.props.history.push('/Review');
     };
 
+
+    handleBack = (event) => {
+        this.props.history.push('/Supported');
+    };
+
     render() {
         return (
             <div >
                 Comments. <br />
                 <textarea rows='4' columns='100' placeholder='Leave a comment...' onChange={this.handleChange}></textarea>
                 <button onClick={this.handleSubmit}>Next</button>
+                <button onClick={this.handleBack}>Back</button>
             </div>
         );
     }

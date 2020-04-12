@@ -27,6 +27,10 @@ class Supported extends Component {
         }
     };
 
+    handleBack = (event) => {
+        this.props.history.push('/Understanding');
+    };
+
     render() {
         return (
             <div>
@@ -40,6 +44,7 @@ class Supported extends Component {
                     <option value='1'>1- I'm all alone...</option>
                 </select>
                 <button onClick={this.handleSubmit}>Next</button>
+                <button onClick={this.handleBack}>Back</button>
             </div>
         );
     }

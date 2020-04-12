@@ -16,6 +16,10 @@ class Review extends Component {
       .catch((error) => { console.log(error) });
   };
 
+  handleBack = (event) => {
+    this.props.history.push('/Comments');
+};
+
   render() {
     return (
       <div>
@@ -25,6 +29,7 @@ class Review extends Component {
           Support: {this.props.feedbackInputs.supported}<br />
           Comments:{this.props.feedbackInputs.comments} <br />
         <button onClick={this.handleSubmit}>Submit feedback</button>
+        <button onClick={this.handleBack}>Back</button>
       </div>
     );
   }
